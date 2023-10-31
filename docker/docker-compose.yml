@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  sequences:
+    hostname: sequences-api
+    build:
+      context: ../
+      dockerfile: ./Sequences/Sequences.Api/Dockerfile
+    ports:
+      - "3001:80"
